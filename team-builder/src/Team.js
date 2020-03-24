@@ -11,12 +11,6 @@ const Team = props =>
 {
 
   const [team, setTeam] = useState(List)
-  console.log("Team", team)
-  team.map(element =>
-  {
-    console.log("element", element)
-  })
-  console.log("length", team.length)
 
   if (team.length === 0)
   {
