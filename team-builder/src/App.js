@@ -6,8 +6,6 @@ import Team from './Team'
 
 function App() {
 
-
- 
   return (
     <div className="App">
     <Team/>
