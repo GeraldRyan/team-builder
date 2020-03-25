@@ -10,8 +10,8 @@ function App()
   const [team, setTeam] = useState(List)
 
   const [formValues, setFormValues] = useState({
-    fname: 'John',
-    lname: 'Wick',
+    fname: '',
+    lname: '',
     email: '',
     role: ''
   })
@@ -47,7 +47,6 @@ function App()
         onInputChange={onInputChange}
         formValues={formValues}
         onFormSubmit={onFormSubmit}
-
       />
     </div>
   );

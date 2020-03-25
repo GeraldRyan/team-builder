@@ -3,10 +3,28 @@ body{
   color:white;
 }
 
-#cardholder{
+.grid-parent{
 max-width:75%;
 margin:auto;
-background-color:rgb(70, 70, 70);
-display:flex;
+background-color:rgb(52, 121, 98);
+display:grid;
+grid-template-columns: auto auto auto;
 justify-content: space-between;
+}
+.grid-parent >div:nth-child(even){
+  background-color:rgb(72, 86, 209);
+}
+*{
+  border:1px solid red
+}
+
+.form-container{
+ width:25%;
+ margin:auto;
+ clear:both;
+}
+
+.form-container input{
+  width:100%;
+  clear:both;
 }

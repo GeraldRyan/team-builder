@@ -5,7 +5,7 @@ import './Team.css';
 import List from './List'
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from '../node_modules/reactstrap'
 import Form from './Form'
-
+import {  Carousel,  CarouselItem,  CarouselControl,  CarouselIndicators,  CarouselCaption} from 'reactstrap';
 
 const Team = props =>
 {
@@ -17,25 +17,39 @@ const Team = props =>
   }
   return (
     <div>
-      <div>Hurray</div>
+      <h1>Hello</h1>
+      <Form
+        onInputChange={props.onInputChange}
+        formValues={props.formValues}
+        onFormSubmit={props.onFormSubmit}
+      />
 
-
-      <div id="cardholder">
+      <div class="grid-parent">
         {props.team.map(element => (
+
           <Card>
-          <div>Name: {`${element.fname} ${element.lname}`} </div>
-          <div>Email: {element.email}</div>
-          <div>Role: {element.role}</div>
+            <CardBody>
+            <div>Name: {`${element.fname} ${element.lname}`} </div>
+            <div>Email: {element.email}</div>
+            <div>Role: {element.role}</div>
+            </CardBody>
           </Card>
+
           
-      )
+        //   <Carousel
+        //   activeIndex={activeIndex}
+        //   next={next}
+        //   previous={previous}
+        // >
+        //   <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        //   {slides}
+        //   <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+        //   <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+        // </Carousel>
+        )
         )}
       </div>
-      <Form 
-      onInputChange={props.onInputChange}
-      formValues={props.formValues}
-      onFormSubmit={props.onFormSubmit}
-      />
+
       <img src={logo} className="App-logo" alt="logo" />
     </div>
   )
