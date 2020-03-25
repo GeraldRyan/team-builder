@@ -1,0 +1,38 @@
+body{
+  background-color:rgb(31, 31, 31);
+  color:white;
+}
+
+.grid-parent{
+max-width:75%;
+margin:auto;
+background-color:rgb(52, 121, 98);
+display:grid;
+grid-template-columns: auto auto auto;
+justify-content: space-between;
+}
+.grid-parent >div:nth-child(even){
+  background-color:rgb(72, 86, 209);
+}
+*{
+  /* border:1px solid red */
+}
+
+.form-container{
+ /* width:100%; */
+ display:grid;
+ /* margin:auto; */
+ /* clear:both; */
+}
+label{
+  display:block;
+}
+.form-container input{
+  /* width:50%; */
+  /* clear:both; */
+  /* display:block; */
+}
+
+.card-body div:nth-child(odd){
+  /* TODO */
+}
