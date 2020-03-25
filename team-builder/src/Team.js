@@ -9,34 +9,33 @@ import Form from './Form'
 
 const Team = props =>
 {
-
-  const [team, setTeam] = useState(List)
-
-  if (team.length === 0)
+  if (props.team.length === 0)
   {
     return (
       <div>Loading...</div>
     )
   }
-
   return (
     <div>
       <div>Hurray</div>
 
 
       <div id="cardholder">
-        {team.map(element => (
+        {props.team.map(element => (
           <Card>
           <div>Name: {`${element.fname} ${element.lname}`} </div>
           <div>Email: {element.email}</div>
           <div>Role: {element.role}</div>
-          
           </Card>
           
       )
         )}
       </div>
-      <Form></Form>
+      <Form 
+      onInputChange={props.onInputChange}
+      formValues={props.formValues}
+      onFormSubmit={props.onFormSubmit}
+      />
       <img src={logo} className="App-logo" alt="logo" />
     </div>
   )
