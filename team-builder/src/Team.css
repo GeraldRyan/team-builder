@@ -15,16 +15,24 @@ justify-content: space-between;
   background-color:rgb(72, 86, 209);
 }
 *{
-  border:1px solid red
+  /* border:1px solid red */
 }
 
 .form-container{
- width:25%;
- margin:auto;
- clear:both;
+ /* width:100%; */
+ display:grid;
+ /* margin:auto; */
+ /* clear:both; */
+}
+label{
+  display:block;
+}
+.form-container input{
+  /* width:50%; */
+  /* clear:both; */
+  /* display:block; */
 }
 
-.form-container input{
-  width:100%;
-  clear:both;
+.card-body div:nth-child(odd){
+  /* TODO */
 }

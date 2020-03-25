@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import logo from './logo.svg';
+import shamrock from './shamrock.svg'
 import './Team.css';
 import List from './List'
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from '../node_modules/reactstrap'
@@ -49,8 +50,9 @@ const Team = props =>
         )
         )}
       </div>
-
-      <img src={logo} className="App-logo" alt="logo" />
+<br/>
+<br/>
+      <img src={shamrock} className="App-logo" alt="logo" />
     </div>
   )
 }
